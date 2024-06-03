@@ -35,3 +35,10 @@ const biodata = {
     ],
     interestOfCoding : true,
 }
+console.log("Name : " + biodata.name)
+console.log("Age : " + biodata.age)
+console.log("Hobbies : " + biodata.hobbies)
+console.log("Am i Married : " + biodata.isMarried)
+console.log("Im school in  : " + biodata.schoolList[2].name)
+console.log("My skill : " + biodata.skill[1].skillName)
+console.log("Am i interset in coding : " + biodata.interestOfCoding)
