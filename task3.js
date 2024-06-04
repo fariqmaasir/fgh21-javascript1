@@ -1,17 +1,14 @@
-function printSegitiga(a) {
-  if (typeof a !== 'number' || a < 1) {
+const printSegitiga = 5
+  if (typeof printSegitiga !== 'number' || printSegitiga < 1) {
     console.log("printSegitiga harus berupa bilangan positif")
     return
   } else {
     let string = "";
-    for (let i = a; i >= 1; i--) {
+    for (let i = printSegitiga; i >= 1; i--) {
       for (let j = 1; j <= i; j++) {
         string += j;
       }
       string += "\n";
     }
-    return string;
-  }
+    console.log(string)
 }
-let hasil = printSegitiga(5);
-console.log(hasil);

@@ -1,20 +1,26 @@
-const id = {id : 1}
-const name = {name: "Fariq Maasir"}
-const username = {username: "Maasir"}
-const email = {email: "mfariqmaasir@gmail.com"}
-const address = { 
-    address : {
-    street : "Tirta raya",
-    block : "F313",
-    city : "Bekasi city",
-    zipcode : "17423" 
+let data = {
+    id: 1,
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz",
+    address: 
+    {
+        street: "Kulas Light",
+        suite: "Apt. 556",
+        city: "Gwenborough",
+        zipcode: "92998-3874",
+       },
+    phone: "1-770-736-8031 x56442",
+    website: "hildegard.org",
 }
-}
-const phone = {phone: "+62-895-3459-60209"}
-const website = {website: "fariqmaasir.github.io"}
 
-let data  = {...name,...username,...email,...address,...phone,...website,}
-console.log(data)
+//a
+const name = { Name : "Fariq Maasir"}
+const email = { Email : "mfariqmaasir@gmail.com"}
+const hobby = { Hobbies :"Reading Book, Watching Coach Justin, listening to Coki preaching"}
+let bio  = {...name,...email,...hobby}
+console.log(bio)
 
-const {address : {street,city}} = address
+//b
+const {street,city} = data.address
 console.log(street,city)
